@@ -1,0 +1,77 @@
+.max_container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.earnings_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.2em;
+  margin-top: 1.5em;
+  align-self: flex-end;
+  line-height: 27px;
+}
+
+.earnings {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.coin_light {
+  width: 22px;
+  margin-right: 7px;
+}
+
+.total_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.total_earnings {
+  text-align: center;
+  /* padding-bottom: 10px; */
+}
+
+.earning-h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.earning-p {
+  font-size: 33px;
+}
+
+.Date_container {
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.earningsList_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date-h1 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.treatment-p {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}

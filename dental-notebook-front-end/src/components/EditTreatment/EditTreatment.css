@@ -1,0 +1,40 @@
+.popup-button-wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-save {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #389dbc;
+}
+.button-cancel {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+.input-name {
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.input-price {
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.editTreatment-button-container {
+  text-align: right;
+}

@@ -1,0 +1,130 @@
+.priceList-container {
+  padding-bottom: 100px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.2em;
+  margin-top: 1.5em;
+  align-self: flex-end;
+  line-height: 27px;
+}
+
+.treatment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.money-pin {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.price-container {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.treatment-name {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.treatment-price {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.delete-button {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+}
+
+.delete-button2 {
+  margin-top: -2px;
+  background: none;
+  border: none;
+  height: fit-content;
+  cursor: pointer;
+}
+.add-button {
+  background: none;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.button-edit-treatment {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  align-items: flex-end;
+}
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.popup-button-wrapper3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-cancel1 {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+.button-save1 {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #389dbc;
+}
+.input-treatment-name {
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.input-treatment-price {
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.addTreatment-button-container {
+  text-align: right;
+}

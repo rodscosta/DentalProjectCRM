@@ -1,0 +1,124 @@
+.appointments-wrapper {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.appointments-title {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-bottom: 2.2em;
+  justify-content: center;
+  align-self: flex-end;
+  line-height: 27px;
+}
+.appointments-title-logo {
+  width: 33px;
+  margin-right: 3px;
+}
+
+.appointments-title-txt {
+  font-size: 22px;
+  font-weight: 300;
+  align-self: flex-end;
+}
+
+/* CALENDAR CSS */
+.appointments-calendar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.appointments-calendar-info {
+  border: none;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #24a4cc;
+}
+.react-calendar__tile--active {
+  border-radius: 15px;
+  background: #24a4cc;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #24a4cc !important;
+}
+.react-calendar__tile--now {
+  border-radius: 15px;
+}
+/* CALENDAR CSS END */
+
+.appointments-button-wrapper {
+  height: 28px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.appointments-info {
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  font-family: Roboto;
+  justify-content: space-between;
+}
+.appointments-info-name {
+  font-weight: 600;
+}
+
+.appointments-info-date {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.appointments-info-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.appointments-button-wrapper {
+  height: 28px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.appointments-button {
+  width: 90%;
+  max-width: 600px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 19%);
+  cursor: pointer;
+}
+/* .appointments-delete-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  margin-right: -9px;
+  display: flex;
+  align-items: center;
+}
+.appointments-delete-button-img {
+  width: 45px;
+} */
+.add-appointments {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,146 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #25a4cc;
+  padding: 25px 0 15px;
+  position: relative;
+  z-index: 20;
+  max-height: 90px;
+  min-height: 80px;
+}
+
+.logo-container img {
+  width: auto;
+  height: 40px;
+}
+
+.navBar {
+  position: relative;
+}
+
+.navbar-link-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar button {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: #25a4cc;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  max-width: 290px;
+  transform: translateX(-290px);
+  z-index: 15;
+  transition: transform 500ms ease-out;
+}
+
+.menuNav.showMenu {
+  /* width: 100%; */
+  transform: translateX(0px);
+}
+
+/* HAMBURGER MENU */
+/* checkbox */
+.bar {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+/* bars */
+.hamburger-menu {
+  --color-bar: hsl(0, 0%, 95%);
+  --metric-bar-height: 0.15em;
+  --metric-bar-width: 2em;
+  position: absolute;
+  z-index: 10;
+  /* top: -45px; */
+  bottom: 8px;
+  left: 10px;
+  width: 32px;
+}
+
+.hamburger-menu .bar__element {
+  margin: 0.5em 0;
+  width: var(--metric-bar-width);
+  height: var(--metric-bar-height);
+  background-color: var(--color-bar);
+  transition: all 0.4s ease;
+  border-radius: var(--metric-bar-height);
+  /* box-shadow: 1px 0px 10px hsla(0, 0%, 20%, 0.2); */
+}
+
+.hamburger-menu input[type="checkbox"]:hover + label .bar__element {
+  filter: brightness(1.05);
+}
+
+.hamburger-menu input[type="checkbox"]:checked + label .one {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-menu input[type="checkbox"]:checked + label .three {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger-menu input[type="checkbox"]:checked + label .two {
+  transform: scale(0);
+  transition: all 150ms ease;
+}
+
+.hamburger-menu-label {
+  cursor: pointer;
+}
+/* HAMBURGER MENU END */
+
+.navBar a {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navBar a:hover,
+.navBar a:focus {
+  text-decoration: underline;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.menuNav li:first-child {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container img {
+    height: 60px;
+  }
+}

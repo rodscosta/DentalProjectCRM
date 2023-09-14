@@ -1,0 +1,298 @@
+body {
+  overflow-x: hidden;
+}
+
+.patient-container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.patient-title {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  font-weight: 300;
+}
+
+.patient-title span {
+  margin-right: 5px;
+}
+
+.patient-personalInfo-form h3:first-child {
+  margin-top: 2.2em;
+}
+
+.patient-personalInfo-form h3,
+.teeth-map h3,
+.patient-appointments-container h3 {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+/* PERSONAL INFORMATION */
+.patient-form-personalInfo-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* SIMULATE GAP HACK */
+  margin: -20px 0 0 -20px;
+  width: calc(100% + 20px);
+  /* SIMULATE GAP HACK END */
+}
+
+/* SIMULATE GAP HACK */
+.patient-form-personalInfo-container > * {
+  margin: 20px 0 0 20px;
+  width: calc(50% - 20px);
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+}
+/* SIMULATE GAP HACK END */
+
+.patient-form-personalInfo-birthDate {
+  border: none;
+}
+
+.patient-form-personalInfo-container label {
+  border: none;
+  display: block;
+}
+
+.patient-form-personalInfo-container input[type="date"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.patient-form-personalInfo-container select {
+  background-color: white;
+}
+/* PERSONAL INFORMATION END */
+
+.patient-form-medicalBackground-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  /* SIMULATE GAP HACK */
+  margin: -10px 0 0 -10px;
+  width: calc(100% + 10px);
+  /* SIMULATE GAP HACK END */
+}
+
+.patient-form-medicalBackground-checkboxes > * {
+  margin: 10px 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-form-medicalBackground-checkboxes div:nth-child(1),
+.patient-form-medicalBackground-checkboxes div:nth-child(3) {
+  width: calc(60% - 10px);
+}
+
+.patient-form-medicalBackground-checkboxes div:nth-child(2),
+.patient-form-medicalBackground-checkboxes div:nth-child(4) {
+  width: calc(40% - 10px);
+}
+
+/* CHECKBOXES */
+.patient-form-medicalBackground-checkboxes input {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.patient-form-medicalBackground-checkboxes input {
+  height: 25px;
+  width: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #25a4cc;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.patient-form-medicalBackground-checkboxes input:checked {
+  border: 1px solid #25a4cc;
+  background-color: #25a4cc;
+}
+
+.patient-form-medicalBackground-checkboxes input:checked::after {
+  content: "✔";
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patient-form-medicalBackground-checkboxes input:active {
+  border: 2px solid #34495e;
+}
+/* CHECKBOXES END */
+
+/* MEDICAL BACKGROUND TEXT INPUTS */
+.patient-form-medicalBackground-textInputs {
+  margin: -20px 0 0 -20px;
+  width: calc(100% + 20px);
+  margin-top: 10px;
+}
+
+.patient-form-medicalBackground-textInputs > * {
+  margin: 0 0 0 20px;
+  width: calc(50% - 20px);
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+}
+/* MEDICAL BACKGROUND TEXT INPUTS END */
+
+/* SUBMIT BUTTON */
+.submitButton {
+  position: fixed !important;
+  bottom: 25px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+/* SUBMIT BUTTON END */
+
+.teeth-map-img-container {
+  text-align: center;
+}
+
+.teeth-map-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* TEETH MAP TREATMENT LIST */
+.teeth-map-treatment {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.teeth-map-treatment p:nth-child(1) {
+  width: 20px;
+  margin: 0;
+}
+
+.teeth-map-treatment p {
+  width: calc(100% / 2 - 20px);
+  margin-left: 20px;
+}
+
+.teeth-map-deleteTreatment {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* TEETH MAP TREATMENT LIST END */
+
+/* TEETH MAP FORM TO ADD TO TREATMENT LIST */
+.teeth-map-form-container {
+  margin: 30px 0 0 -10px;
+  width: calc(100% + 10px);
+}
+
+.teeth-map-form-container > * {
+  margin: 0 0 0 10px;
+  width: calc((100% / 2) - 45px);
+  border: none;
+  border-bottom: 1px solid #bbbdbd;
+  font-size: 16px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.teeth-map-form-container select:first-of-type {
+  width: 60px;
+}
+
+.teeth-map-form > button {
+  margin-top: 10px;
+  background-color: #25a4cc;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  padding: 0.6em 0.75em;
+  cursor: pointer;
+}
+/* TEETH MAP FORM TO ADD TO TREATMENT LIST END */
+
+/* PATIENT APPOINTMENTS */
+
+.patient-appointments {
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 19%);
+  padding: 0.75em;
+}
+
+.patient-appointments + .patient-appointments {
+  margin-top: 15px;
+}
+
+.patient-appointments-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bbbdbd;
+}
+
+.patient-appointments-treatments {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-top: 5px;
+}
+
+.patient-appointments-treatments-li + .patient-appointments-treatments-li {
+  margin-top: 8px;
+}
+
+.patient-noAppointments {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2em;
+  color: #757575;
+}
+
+/* PATIENT APPOINTMENTS END */
+
+@media screen and (min-width: 600px) {
+  .patient-form-medicalBackground-checkboxes div:nth-child(1),
+  .patient-form-medicalBackground-checkboxes div:nth-child(3) {
+    width: calc(50% - 10px);
+  }
+
+  .patient-form-medicalBackground-checkboxes div:nth-child(2),
+  .patient-form-medicalBackground-checkboxes div:nth-child(4) {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .patient-container {
+    width: 960px;
+  }
+}
